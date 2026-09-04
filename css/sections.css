@@ -343,7 +343,14 @@
   }
 }
 
+/* O "0" do Syne fica minúsculo e alto neste peso — parece um símbolo de
+   grau colado no número. Números em headline usam a fonte do corpo. */
+.price-figure {
+  font-family: var(--font-body);
+}
+
 .pricing__value {
+  font-family: var(--font-body);
   font-size: clamp(3rem, 9vw, 7rem);
   font-weight: 800;
   letter-spacing: -0.03em;

@@ -198,7 +198,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  white-space: nowrap;
+  text-align: center;
   border: 1px solid transparent;
   cursor: pointer;
   transition: background-color var(--duration-base) var(--ease-premium),

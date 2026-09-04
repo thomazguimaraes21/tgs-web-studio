@@ -344,11 +344,16 @@
 }
 
 .pricing__value {
-  font-size: clamp(4rem, 9vw, 7rem);
+  font-size: clamp(3rem, 9vw, 7rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 0.95;
-  white-space: nowrap;
+}
+
+@media (min-width: 56rem) {
+  .pricing__value {
+    white-space: nowrap;
+  }
 }
 
 .pricing__value span {
@@ -365,8 +370,14 @@
 .pricing__features {
   margin-top: var(--space-6);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--space-4) var(--space-5);
+}
+
+@media (min-width: 30rem) {
+  .pricing__features {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .pricing__feature {

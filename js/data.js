@@ -25,6 +25,12 @@ var PROJECTS = [
     url: "https://colp-odontologia.netlify.app/",
   },
   {
+    nome: "Dra. Gabriella Farias",
+    categoria: "Site Institucional",
+    descricao: "Odontologia e estética em Barueri/Alphaville, com identidade visual própria em branco e azul claro.",
+    url: "https://dra-gabriella-farias.netlify.app/",
+  },
+  {
     nome: "JSE Energy Advisor",
     categoria: "Sistema Personalizado",
     descricao: "Plataforma de diagnóstico energético empresarial, desenvolvida sob medida para o operador do negócio.",

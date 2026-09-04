@@ -15,6 +15,7 @@
       initPortfolio();
       initWhatsAppLinks();
       initFooterYear();
+      initClock();
     });
   } catch (err) {
     // Falha silenciosa — o failsafe inline no HTML garante visibilidade.
@@ -110,9 +111,9 @@
         '<a class="portfolio-row reveal" href="' +
         p.url +
         '" target="_blank" rel="noopener">' +
-        '<span class="portfolio-row__index">' +
+        '<span class="portfolio-row__index">[' +
         String(i + 1).padStart(2, "0") +
-        "</span>" +
+        "]</span>" +
         '<span class="portfolio-row__body">' +
         '<span class="portfolio-row__category">' +
         p.categoria +
@@ -150,6 +151,29 @@
       var el = document.getElementById(id);
       if (el) el.href = link;
     });
+  }
+
+  function initClock() {
+    var el = document.getElementById("hero-clock");
+    if (!el) return;
+
+    function tick() {
+      try {
+        var formatter = new Intl.DateTimeFormat("pt-BR", {
+          timeZone: "America/Sao_Paulo",
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        el.textContent = formatter.format(new Date());
+      } catch (e) {
+        var now = new Date();
+        el.textContent =
+          String(now.getHours()).padStart(2, "0") + ":" + String(now.getMinutes()).padStart(2, "0");
+      }
+    }
+
+    tick();
+    setInterval(tick, 30000);
   }
 
   function initFooterYear() {

@@ -17,17 +17,17 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Geist:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
   <style>
     html, body { background: #000000 !important; color: #ffffff; }
   </style>
 
-  <link rel="stylesheet" href="css/tokens.css?v=1" />
-  <link rel="stylesheet" href="css/base.css?v=1" />
+  <link rel="stylesheet" href="css/tokens.css?v=2" />
+  <link rel="stylesheet" href="css/base.css?v=2" />
   <link rel="stylesheet" href="css/layout.css?v=1" />
-  <link rel="stylesheet" href="css/components.css?v=1" />
-  <link rel="stylesheet" href="css/sections.css?v=2" />
+  <link rel="stylesheet" href="css/components.css?v=2" />
+  <link rel="stylesheet" href="css/sections.css?v=3" />
 
   <script>
     document.documentElement.classList.add("js");
@@ -116,6 +116,11 @@
     <!-- ===== HERO ===== -->
     <section class="hero" aria-labelledby="hero-titulo">
       <div class="container hero__inner">
+        <div class="hero__meta">
+          <span class="hero__status"><span class="hero__status-dot"></span> Estúdio digital independente</span>
+          <span class="hero__clock">São Paulo <span id="hero-clock">--:--</span></span>
+        </div>
+
         <p class="eyebrow">Criação de sites &amp; sistemas</p>
         <h1 class="hero__headline" id="hero-titulo">
           <span class="line">Sua empresa é séria.</span>
@@ -126,6 +131,25 @@
         <div class="hero__actions">
           <a class="btn btn--primary btn--lg" id="cta-hero" href="#" target="_blank" rel="noopener">Quero meu site</a>
           <a class="btn btn--ghost btn--lg" href="#projetos">Ver projetos</a>
+        </div>
+
+        <div class="feature-rail reveal-stagger">
+          <div class="feature-rail__item">
+            <span class="feature-rail__tag">01 / infra</span>
+            <p class="feature-rail__label">Código limpo &amp; leve</p>
+          </div>
+          <div class="feature-rail__item">
+            <span class="feature-rail__tag">02 / index</span>
+            <p class="feature-rail__label">SEO nativo</p>
+          </div>
+          <div class="feature-rail__item">
+            <span class="feature-rail__tag">03 / form</span>
+            <p class="feature-rail__label">Design sob medida</p>
+          </div>
+          <div class="feature-rail__item">
+            <span class="feature-rail__tag">04 / oferta</span>
+            <p class="feature-rail__label">Sem mensalidade</p>
+          </div>
         </div>
       </div>
     </section>
@@ -140,22 +164,22 @@
 
         <div class="services-list reveal">
           <div class="service-row">
-            <span class="service-row__index">01</span>
+            <span class="service-row__index">[01]</span>
             <span class="service-row__title">Sites profissionais</span>
             <p class="service-row__desc">Criação de sites modernos, responsivos e pensados para apresentar sua empresa de forma profissional.</p>
           </div>
           <div class="service-row">
-            <span class="service-row__index">02</span>
+            <span class="service-row__index">[02]</span>
             <span class="service-row__title">Landing Pages</span>
             <p class="service-row__desc">Páginas focadas em conversão, campanhas, anúncios e geração de leads.</p>
           </div>
           <div class="service-row">
-            <span class="service-row__index">03</span>
+            <span class="service-row__index">[03]</span>
             <span class="service-row__title">Sistemas personalizados</span>
             <p class="service-row__desc">Desenvolvimento de sistemas e ferramentas sob medida para necessidades específicas do negócio.</p>
           </div>
           <div class="service-row">
-            <span class="service-row__index">04</span>
+            <span class="service-row__index">[04]</span>
             <span class="service-row__title">Soluções digitais</span>
             <p class="service-row__desc">Projetos personalizados de acordo com o objetivo e a operação de cada empresa.</p>
           </div>
@@ -185,19 +209,19 @@
 
         <div class="process-grid reveal-stagger">
           <div class="process-step">
-            <p class="process-step__index">01</p>
+            <p class="process-step__index">[ PASSO 01 ]</p>
             <p class="process-step__title">Você explica o que precisa.</p>
           </div>
           <div class="process-step">
-            <p class="process-step__index">02</p>
+            <p class="process-step__index">[ PASSO 02 ]</p>
             <p class="process-step__title">Definimos estrutura e direção visual.</p>
           </div>
           <div class="process-step">
-            <p class="process-step__index">03</p>
+            <p class="process-step__index">[ PASSO 03 ]</p>
             <p class="process-step__title">O projeto é desenvolvido.</p>
           </div>
           <div class="process-step">
-            <p class="process-step__index">04</p>
+            <p class="process-step__index">[ PASSO 04 ]</p>
             <p class="process-step__title">Você recebe o site ou sistema pronto.</p>
           </div>
         </div>
@@ -211,7 +235,29 @@
           <p class="pricing__value">R$450<span>site pronto</span></p>
           <div class="pricing__text">
             <h2 id="oferta-titulo">Seu novo site por R$ 450</h2>
-            <p class="lead" style="margin-top: var(--space-4);">A TGS Web Studio cria o seu site profissional por R$ 450. Sistemas personalizados são projetos diferentes de um site padrão e têm orçamento próprio, definido conforme o escopo.</p>
+            <p class="lead" style="margin-top: var(--space-4);">A TGS Web Studio cria o seu site profissional por R$ 450, pagamento único.</p>
+
+            <div class="pricing__features">
+              <div class="pricing__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div><strong>Design próprio</strong><span>Identidade visual pensada pra sua marca, não um template.</span></div>
+              </div>
+              <div class="pricing__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div><strong>100% responsivo</strong><span>Funciona bem em celular e computador.</span></div>
+              </div>
+              <div class="pricing__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div><strong>WhatsApp direto</strong><span>Contato cai direto na sua conversa, sem intermediário.</span></div>
+              </div>
+              <div class="pricing__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div><strong>SEO básico</strong><span>Estrutura pronta pra aparecer no Google.</span></div>
+              </div>
+            </div>
+
+            <p class="pricing__note"><strong>Importante:</strong> o valor de R$ 450 é para site institucional ou landing page. Sistemas personalizados são projetos diferentes e têm orçamento próprio, definido conforme o escopo.</p>
+
             <div class="pricing__actions">
               <a class="btn btn--primary btn--lg" id="cta-pricing" href="#" target="_blank" rel="noopener">Quero começar meu projeto</a>
             </div>
@@ -269,7 +315,7 @@
     }, 1800);
   </script>
 
-  <script src="js/data.js?v=1"></script>
-  <script src="js/main.js?v=1"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

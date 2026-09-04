@@ -1,7 +1,8 @@
 /**
  * Design tokens — TGS Web Studio
- * Preto real dominante, branco puro de contraste, uma única família
- * tipográfica (Manrope) para manter a identidade disciplinada e técnica.
+ * Preto real dominante, branco puro de contraste. Trio tipográfico
+ * disciplinado: Syne (títulos, editorial e anguloso), Geist (corpo,
+ * neutro e legível), Space Mono (labels/índices, o toque técnico).
  */
 
 :root {
@@ -14,7 +15,9 @@
   --border-soft: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.32);
 
-  --font-body: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Syne", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Space Mono", "Courier New", monospace;
 
   --fs-body: 1rem;
   --fs-small: 0.875rem;

@@ -357,10 +357,13 @@
 }
 
 .pricing__value span {
-  font-size: 0.32em;
+  display: inline-block;
+  margin-left: 0.35em;
+  font-size: 0.24em;
   font-weight: 500;
+  letter-spacing: 0;
   color: var(--muted);
-  vertical-align: super;
+  vertical-align: middle;
 }
 
 .pricing__text {

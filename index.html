@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TGS WEB STUDIO | Criação de Sites e Sistemas</title>
+  <meta name="description" content="TGS Web Studio cria sites profissionais, landing pages e sistemas personalizados para empresas. Seu site novo a partir de R$ 450." />
+  <meta name="theme-color" content="#000000" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TGS WEB STUDIO | Criação de Sites e Sistemas" />
+  <meta property="og:description" content="Sites profissionais, landing pages e sistemas personalizados. Seu site novo a partir de R$ 450." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="images/logo/tgs-mark.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    html, body { background: #000000 !important; color: #ffffff; }
+  </style>
+
+  <link rel="stylesheet" href="css/tokens.css?v=1" />
+  <link rel="stylesheet" href="css/base.css?v=1" />
+  <link rel="stylesheet" href="css/layout.css?v=1" />
+  <link rel="stylesheet" href="css/components.css?v=1" />
+  <link rel="stylesheet" href="css/sections.css?v=2" />
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+
+  <!--
+    Google Analytics (GA4) — desligado de propósito. Sem Measurement ID
+    real ainda. Quando tiver (analytics.google.com → Admin → Fluxos de
+    dados → Web), troque G-XXXXXXXXXX abaixo e descomente.
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+  -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TGS Web Studio",
+    "description": "Criação de sites profissionais, landing pages e sistemas personalizados.",
+    "priceRange": "R$450"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="topo">
+    <div class="container site-header__bar">
+      <a class="brand" href="#topo" aria-label="TGS Web Studio, página inicial">
+        <img class="brand__mark" src="images/logo/tgs-mark.png" alt="TGS Web Studio" width="172" height="75" decoding="async" fetchpriority="high" />
+      </a>
+
+      <nav class="nav-primary" aria-label="Navegação principal">
+        <ul style="display:flex; gap: inherit; list-style:none; margin:0; padding:0;">
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm" id="cta-header" href="#" target="_blank" rel="noopener">Solicitar orçamento</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav__top">
+      <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <nav aria-label="Navegação mobile">
+      <ul>
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav__footer">
+      <a class="btn btn--primary btn--block" id="cta-mobile-nav" href="#" target="_blank" rel="noopener">Solicitar orçamento</a>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero__inner">
+        <p class="eyebrow">Criação de sites &amp; sistemas</p>
+        <h1 class="hero__headline" id="hero-titulo">
+          <span class="line">Sua empresa é séria.</span>
+          <span class="line">Seu site também precisa ser.</span>
+        </h1>
+        <p class="lead hero__lead">A TGS Web Studio cria sites, landing pages e sistemas personalizados para empresas que querem ter presença digital de verdade.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" id="cta-hero" href="#" target="_blank" rel="noopener">Quero meu site</a>
+          <a class="btn btn--ghost btn--lg" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Serviços</p>
+          <h2 id="servicos-titulo" style="margin-top: var(--space-4);">O que a TGS entrega</h2>
+        </div>
+
+        <div class="services-list reveal">
+          <div class="service-row">
+            <span class="service-row__index">01</span>
+            <span class="service-row__title">Sites profissionais</span>
+            <p class="service-row__desc">Criação de sites modernos, responsivos e pensados para apresentar sua empresa de forma profissional.</p>
+          </div>
+          <div class="service-row">
+            <span class="service-row__index">02</span>
+            <span class="service-row__title">Landing Pages</span>
+            <p class="service-row__desc">Páginas focadas em conversão, campanhas, anúncios e geração de leads.</p>
+          </div>
+          <div class="service-row">
+            <span class="service-row__index">03</span>
+            <span class="service-row__title">Sistemas personalizados</span>
+            <p class="service-row__desc">Desenvolvimento de sistemas e ferramentas sob medida para necessidades específicas do negócio.</p>
+          </div>
+          <div class="service-row">
+            <span class="service-row__index">04</span>
+            <span class="service-row__title">Soluções digitais</span>
+            <p class="service-row__desc">Projetos personalizados de acordo com o objetivo e a operação de cada empresa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="section" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projetos</p>
+          <h2 id="projetos-titulo" style="margin-top: var(--space-4);">O que já foi colocado no ar</h2>
+        </div>
+
+        <div class="portfolio-list" id="portfolio-list"></div>
+      </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section class="section" id="como-funciona" aria-labelledby="processo-titulo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2 id="processo-titulo" style="margin-top: var(--space-4);">Do briefing ao site no ar</h2>
+        </div>
+
+        <div class="process-grid reveal-stagger">
+          <div class="process-step">
+            <p class="process-step__index">01</p>
+            <p class="process-step__title">Você explica o que precisa.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__index">02</p>
+            <p class="process-step__title">Definimos estrutura e direção visual.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__index">03</p>
+            <p class="process-step__title">O projeto é desenvolvido.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__index">04</p>
+            <p class="process-step__title">Você recebe o site ou sistema pronto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OFERTA ===== -->
+    <section class="pricing reveal" aria-labelledby="oferta-titulo">
+      <div class="container" style="padding-block: var(--space-9);">
+        <div class="pricing__grid">
+          <p class="pricing__value">R$450<span>site pronto</span></p>
+          <div class="pricing__text">
+            <h2 id="oferta-titulo">Seu novo site por R$ 450</h2>
+            <p class="lead" style="margin-top: var(--space-4);">A TGS Web Studio cria o seu site profissional por R$ 450. Sistemas personalizados são projetos diferentes de um site padrão e têm orçamento próprio, definido conforme o escopo.</p>
+            <div class="pricing__actions">
+              <a class="btn btn--primary btn--lg" id="cta-pricing" href="#" target="_blank" rel="noopener">Quero começar meu projeto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Sobre</p>
+          <h2 id="sobre-titulo" style="margin-top: var(--space-4);">A TGS Web Studio</h2>
+        </div>
+        <div class="about__text reveal">
+          <p>A TGS Web Studio cria experiências digitais profissionais para empresas que querem ter uma presença online à altura do próprio negócio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="cta-final reveal" id="contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <h2 id="contato-titulo">Vamos colocar sua empresa na internet do jeito certo.</h2>
+        <p class="lead cta-final__lead">Fale agora pelo WhatsApp e conte o que sua empresa precisa.</p>
+        <a class="btn btn--primary btn--lg" id="cta-final" href="#" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img class="footer__brand" src="images/logo/tgs-mark.png" alt="TGS Web Studio" loading="lazy" decoding="async" />
+          <p class="footer__tagline">Criação de sites, landing pages e sistemas personalizados.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="ano-atual"></span> TGS Web Studio. <a href="privacidade.html">Política de Privacidade</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Failsafe: se as animações falharem por qualquer motivo, tudo fica
+       visível mesmo assim depois de 1.8s. -->
+  <script>
+    setTimeout(function () {
+      document.body.classList.add("is-loaded");
+      document.querySelectorAll(".reveal, .reveal-stagger").forEach(function (el) {
+        el.classList.add("is-visible");
+      });
+    }, 1800);
+  </script>
+
+  <script src="js/data.js?v=1"></script>
+  <script src="js/main.js?v=1"></script>
+</body>
+</html>

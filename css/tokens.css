@@ -1,0 +1,76 @@
+/**
+ * Design tokens — TGS Web Studio
+ * Preto real dominante, branco puro de contraste, uma única família
+ * tipográfica (Manrope) para manter a identidade disciplinada e técnica.
+ */
+
+:root {
+  --bg: #000000;
+  --bg-raised: #0a0a0a;
+  --text: #ffffff;
+  --muted: #9a9a9a;
+  --muted-2: #6b6b6b;
+  --border: rgba(255, 255, 255, 0.16);
+  --border-soft: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.32);
+
+  --font-body: "Manrope", "Helvetica Neue", Arial, sans-serif;
+
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.75rem;
+  --fs-h1: clamp(2.5rem, 4.2vw + 1.2rem, 5.25rem);
+  --fs-h2: clamp(2rem, 2.6vw + 1rem, 3.25rem);
+  --fs-h3: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+  --fs-lead: clamp(1.0625rem, 0.6vw + 0.9rem, 1.25rem);
+  --fs-number: clamp(2.5rem, 4vw, 4rem);
+
+  --lh-body: 1.6;
+  --lh-heading: 1.08;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+  --space-10: 9.5rem;
+
+  --container-max: 78rem;
+  --container-pad: var(--space-4);
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms;
+  --duration-base: 320ms;
+  --duration-entrance: 900ms;
+
+  --touch-target: 44px;
+
+  --z-header: 50;
+  --z-overlay: 60;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --container-pad: var(--space-6);
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --container-pad: var(--space-8);
+  }
+}
+
+@media (min-width: 100rem) {
+  :root {
+    --container-max: 92rem;
+    --container-pad: var(--space-9);
+  }
+}
